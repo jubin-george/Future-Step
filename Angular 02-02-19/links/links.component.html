@@ -1,0 +1,13 @@
+
+<form #f="ngForm" name="regForm" (submit)="registration(f)">
+  <div class="form-group">
+    <h1>Login</h1>
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="student.name" placeholder="Enter your name">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Password</label>
+    <input type="password" class="form-control" id="pass" name="pass" [(ngModel)]="student.password" placeholder="Enter password">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirm & Register</button>
+  </form> 
