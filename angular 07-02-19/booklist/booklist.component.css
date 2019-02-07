@@ -1,0 +1,10 @@
+div{
+    background-color:#dc3545;
+    color: white;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: inherit;
+    margin-left: 300px;
+    margin-right: 300px;
+}

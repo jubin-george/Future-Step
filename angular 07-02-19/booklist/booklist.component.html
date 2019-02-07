@@ -1,0 +1,24 @@
+<div align="center" >
+    Roll no:{{selbook.swtitle}}
+<br/>
+Name :{{selbook.sauthor}}
+<br/>
+Image:<img src="assets/{{selbook.simage}}" width="100" height="100"> 
+<br>
+Batch:  {{selbook.spublisher}}
+<br>
+Dept:  {{selbook.sdept}}
+
+
+
+
+<br/>
+</div>
+<app-book [title]="item.title"
+[author]="item.author"
+[publisher]="item.publisher"
+[image]="item.image"
+[dept]="item.dept"
+
+
+ *ngFor="let item of bookdetails"(sendbook)=" addbook($event)"></app-book>
